@@ -12,19 +12,26 @@ import parkingImage from '../assets/images/services-images/parking-area 1.png';
 import prototypeImage from '../assets/images/services-images/prototype 1.png';
 import sanitationImage from '../assets/images/services-images/house-water-supply 1.png';
 
+// Helper function to capitalize the first letter of each word
+const capitalizeTitle = (title) => {
+  return title
+    .toLowerCase()
+    .replace(/\b\w/g, (char) => char.toUpperCase());
+};
+
 const services = [
-  { title: "INDUSTRIAL BUILDINGS", image: infraImage },
-  { title: "HOSPITALS AND MEDICAL CENTERS", image: hospitalImage },
-  { title: "SCHOOLS AND EDUCATIONAL FACILITIES", image: schoolImage },
-  { title: "HOTELS AND TOURISM FACILITIES", image: hotelImage },
-  { title: "OFFICES AND WORKPLACES", image: workplaceImage },
-  { title: "SHOPS AND SHOPPING CENTERS", image: mallImage },
-  { title: "RESTAURANTS AND ENTERTAINMENT FACILITIES", image: restaurantImage },
-  { title: "SPORTS VENUES AND FACILITIES", image: arenaImage },
-  { title: "MOSQUES AND RELIGIOUS ESTABLISHMENTS", image: mosqueImage },
-  { title: "PARKING LOTS AND PUBLIC FACILITIES", image: parkingImage },
-  { title: "ENGINEERING AND PROJECT MANAGEMENT", image: prototypeImage },
-  { title: "INSTALLATION AND REPAIR OF SANITATION SYSTEMS", image: sanitationImage }
+  { title: capitalizeTitle("INDUSTRIAL BUILDINGS"), image: infraImage },
+  { title: capitalizeTitle("HOSPITALS AND MEDICAL CENTERS"), image: hospitalImage },
+  { title: capitalizeTitle("SCHOOLS AND EDUCATIONAL FACILITIES"), image: schoolImage },
+  { title: capitalizeTitle("HOTELS AND TOURISM FACILITIES"), image: hotelImage },
+  { title: capitalizeTitle("OFFICES AND WORKPLACES"), image: workplaceImage },
+  { title: capitalizeTitle("SHOPS AND SHOPPING CENTERS"), image: mallImage },
+  { title: capitalizeTitle("RESTAURANTS AND ENTERTAINMENT FACILITIES"), image: restaurantImage },
+  { title: capitalizeTitle("SPORTS VENUES AND FACILITIES"), image: arenaImage },
+  { title: capitalizeTitle("MOSQUES AND RELIGIOUS ESTABLISHMENTS"), image: mosqueImage },
+  { title: capitalizeTitle("PARKING LOTS AND PUBLIC FACILITIES"), image: parkingImage },
+  { title: capitalizeTitle("ENGINEERING AND PROJECT MANAGEMENT"), image: prototypeImage },
+  { title: capitalizeTitle("INSTALLATION AND REPAIR OF SANITATION SYSTEMS"), image: sanitationImage }
 ];
 </script>
 
@@ -34,10 +41,13 @@ const services = [
     <p class="text-3xl">
       Diverse services: projects that reflect ambitions and meet every need
     </p>
-    <div class="grid grid-cols-4 gap-4">
-      <div v-for="service in services" class="flex flex-col justify-center items-center shadow-lg p-4">
+    <div class="grid grid-cols-4 gap-10 w-fit self-center">
+      <div
+        v-for="service in services"
+        class="flex flex-col justify-center items-center cursor-pointer transition-all ease-in-out shadow-sm hover:shadow-md p-4 rounded-lg text-center space-y-2 w-fit"
+      >
         <img :src="service.image" alt="" class="w-12" />
-        <h1>{{ service.title }}</h1>
+        <h1 class="w-40">{{ service.title }}</h1>
       </div>
     </div>
   </div>
