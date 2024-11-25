@@ -24,7 +24,7 @@ const pages = [
 </script>
 
 <template>
-  <div class="flex w-full justify-between items-center">
+  <div class="flex w-full justify-between items-center lg:px-20 lg:py-4">
     <img src="../assets/images/Yapisu_Logo 2.svg" alt="" class="w-32" />
     <div class="flex space-x-12">
       <router-link
