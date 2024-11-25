@@ -12,7 +12,6 @@ import parkingImage from '../assets/images/services-images/parking-area 1.png';
 import prototypeImage from '../assets/images/services-images/prototype 1.png';
 import sanitationImage from '../assets/images/services-images/house-water-supply 1.png';
 
-// Helper function to capitalize the first letter of each word
 const capitalizeTitle = (title) => {
   return title
     .toLowerCase()
