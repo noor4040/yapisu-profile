@@ -1,7 +1,8 @@
 <script setup>
-import Banner from "@/components/Banner.vue";
-import Services from "@/components/Services.vue";
-import Efficiency from "@/components/Efficiency.vue";
+import Banner from "@/components/home/Banner.vue";
+import Services from "@/components/home/Services.vue";
+import Efficiency from "@/components/home/Efficiency.vue";
+import Projects from "@/components/home/Projects.vue";
 </script>
 
 <template>
@@ -10,6 +11,8 @@ import Efficiency from "@/components/Efficiency.vue";
     <div class="flex flex-col space-y-16 px-24">
       <Services></Services>
       <Efficiency />
+      <Projects />
+
       <h1></h1>
     </div>
   </main>

@@ -42,7 +42,7 @@ const counters =[
     </div>
     <div>
       <img
-        src="../assets/images/efficiency.png"
+        src="@/assets/images/efficiency.png"
         alt=""
         class="rounded-lg w-[400px] "
       />

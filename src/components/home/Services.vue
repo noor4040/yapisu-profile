@@ -1,16 +1,16 @@
 <script setup lang="js">
-import infraImage from '../assets/images/services-images/infrastructure 1.png';
-import hospitalImage from '../assets/images/services-images/hospital 1.png';
-import schoolImage from '../assets/images/services-images/school 1.png';
-import hotelImage from '../assets/images/services-images/hotel 1.png';
-import workplaceImage from '../assets/images/services-images/workplace 1.png';
-import mallImage from '../assets/images/services-images/mall 1.png';
-import restaurantImage from '../assets/images/services-images/restaurant 1.png';
-import arenaImage from '../assets/images/services-images/arena 1.png';
-import mosqueImage from '../assets/images/services-images/mosque 1.png';
-import parkingImage from '../assets/images/services-images/parking-area 1.png';
-import prototypeImage from '../assets/images/services-images/prototype 1.png';
-import sanitationImage from '../assets/images/services-images/house-water-supply 1.png';
+import infraImage from '@/assets/images/services-images/infrastructure 1.png';
+import hospitalImage from '@/assets/images/services-images/hospital 1.png';
+import schoolImage from '@/assets/images/services-images/school 1.png';
+import hotelImage from '@/assets/images/services-images/hotel 1.png';
+import workplaceImage from '@/assets/images/services-images/workplace 1.png';
+import mallImage from '@/assets/images/services-images/mall 1.png';
+import restaurantImage from '@/assets/images/services-images/restaurant 1.png';
+import arenaImage from '@/assets/images/services-images/arena 1.png';
+import mosqueImage from '@/assets/images/services-images/mosque 1.png';
+import parkingImage from '@/assets/images/services-images/parking-area 1.png';
+import prototypeImage from '@/assets/images/services-images/prototype 1.png';
+import sanitationImage from '@/assets/images/services-images/house-water-supply 1.png';
 
 const capitalizeTitle = (title) => {
   return title
