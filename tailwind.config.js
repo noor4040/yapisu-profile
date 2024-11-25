@@ -11,4 +11,13 @@ export default {
     require('daisyui'),
 
   ],
+  theme: {
+    extend: {
+      colors: {
+      primaryRed :'#6C2528',
+      primaryGrey:"#3D3B47"
+      },
+     
+    },
+  },
 }
