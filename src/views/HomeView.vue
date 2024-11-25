@@ -7,7 +7,10 @@ import Efficiency from "@/components/Efficiency.vue";
 <template>
   <main class="flex flex-col space-y-16">
     <Banner />
-    <Services></Services>
-    <Efficiency />
+    <div class="flex flex-col space-y-16 px-24">
+      <Services></Services>
+      <Efficiency />
+      <h1></h1>
+    </div>
   </main>
 </template>

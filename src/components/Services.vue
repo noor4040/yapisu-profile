@@ -35,15 +35,18 @@ const services = [
 </script>
 
 <template>
-  <div class="flex flex-col space-y-4 lg:px-20">
-    <h1 class="font-bold text-4xl">Services</h1>
-    <p class="text-3xl">
-      Diverse services: projects that reflect ambitions and meet every need
+  <div class="flex flex-col space-y-6 lg:px-20">
+    <div class="flex flex-col space-y-2">
+         <h1 class="font-bold text-5xl">Services</h1>
+    <p class="text-2xl">
+      <span class="font-bold">Diverse services:</span> projects that reflect ambitions and meet every need
     </p>
-    <div class="grid grid-cols-4 gap-10 w-fit self-center">
+    </div>
+   
+    <div class="grid grid-cols-4 gap-16 w-full self-center">
       <div
         v-for="service in services"
-        class="flex flex-col justify-center items-center cursor-pointer transition-all ease-in-out shadow-sm hover:shadow-md p-4 rounded-lg text-center space-y-2 w-fit"
+        class="flex flex-col justify-center items-center cursor-pointer transition-all ease-in-out shadow-sm hover:shadow-md p-4 rounded-lg text-center space-y-2 "
       >
         <img :src="service.image" alt="" class="w-12" />
         <h1 class="w-40">{{ service.title }}</h1>
