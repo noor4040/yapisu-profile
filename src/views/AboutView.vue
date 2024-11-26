@@ -1,9 +1,22 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
-</template>
+  <main class="flex flex-col space-y-24">
+    <AboutBanner/>
+    <Text/>
+    <Values/>
+    <TextBold/>
+    <Toggle/>
 
+  </main>
+
+</template>
+<script setup>
+
+import AboutBanner from "@/components/About/AboutBanner.vue";
+import Text from "@/components/About/Text.vue";
+import Values from "@/components/About/Values.vue";
+import TextBold from "@/components/About/TextBold.vue";
+import Toggle from "@/components/About/Toggle.vue";
+</script>
 <style>
 
 </style>

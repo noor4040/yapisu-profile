@@ -14,8 +14,8 @@ const pages = [
     route: "/projects"
   },
   {
-    name: 'Library',
-    route: "/library"
+    name: 'Gallery',
+    route: "/gallery"
   },
   {
     name: 'Company profile',
