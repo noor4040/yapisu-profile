@@ -5,9 +5,9 @@
 <template>
 
 
-  <div class="flex flex-col space-y-4 lg:px-20">
+  <div class="flex flex-col space-y-4 xl:px-20 px-4 2xl:px-60 ">
 
-    <p class="text-2xl text-justify">
+    <p class="text-2xl lg:text-justify 2xl:text-[45px] 2xl:leading-10">
        <span class="font-bold  text-primaryRed">
       Yapisu
     </span> is a leading company specializing in non-residential construction, offering innovative and modern

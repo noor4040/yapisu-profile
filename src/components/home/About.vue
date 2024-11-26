@@ -8,7 +8,7 @@ const AboutPage = () => {
 
 <template>
   <div>
-    <div class="flex flex-col space-y-6 lg:px-20 2xl:px-40">
+    <div class="flex flex-col space-y-6 xl:px-20 2xl:px-40">
       <h1 class="font-bold lg:text-5xl text-3xl 2xl:text-[70px]">
         About <span class="font-bold text-primaryRed">Yapisu</span>
       </h1>

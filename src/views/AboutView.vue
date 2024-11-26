@@ -1,5 +1,5 @@
 <template>
-  <main class="flex flex-col space-y-24">
+  <main class="flex flex-col lg:space-y-24 space-y-14 2xl:space-y-40">
     <AboutBanner/>
     <Text/>
     <Values/>
@@ -16,12 +16,6 @@ import Text from "@/components/About/Text.vue";
 import Values from "@/components/About/Values.vue";
 import TextBold from "@/components/About/TextBold.vue";
 import Toggle from "@/components/About/Toggle.vue";
-
-import {onMounted} from "vue";
-
-onMounted(() => {
-  window.scrollTo(0, 0);
-});
 </script>
 <style>
 
