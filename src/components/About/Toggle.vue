@@ -18,9 +18,9 @@ function toggleSection(section) {
         tabindex="0"
         :class="['collapse', 'collapse-arrow', 'my-10', { 'collapse-open': openSection === 'overview' }]"
         @click="toggleSection('overview')">
-      <div class="collapse-title text-xl font-medium text-primaryGrey ">Company Overview</div>
+      <div class="collapse-title text-4xl font-medium text-primaryGrey ">Company Overview</div>
       <div class="collapse-content text-justify text-lg text-primaryGrey leading-relaxed">
-        <p class="text-primaryGrey">
+        <p class="text-2xl text-primaryGrey">
           From industrial buildings and hospitals to hotels, schools, shopping centers, sports facilities, and mosques,
           our projects embody diversity and inclusivity, focusing on developing infrastructure that drives progress.
           With our extensive experience and innovative vision, we combine modernity and sustainability to deliver
@@ -37,12 +37,12 @@ function toggleSection(section) {
         tabindex="0"
         :class="['collapse', 'collapse-arrow', 'my-10', { 'collapse-open': openSection === 'vision' }]"
         @click="toggleSection('vision')">
-      <div class="collapse-title text-xl font-medium text-gray-700">Vision</div>
-      <div class="collapse-content text-lg text-gray-600 leading-relaxed">
-        <div class="text-xl font-medium text-primaryRed">Building The Future: Leading Innovation And Sustainability In
+      <div class="collapse-title text-4xl font-medium text-gray-700">Vision</div>
+      <div class="collapse-content  text-justify  text-lg text-gray-600 leading-relaxed">
+        <div class="text-2xl font-medium text-primaryRed">Building The Future: Leading Innovation And Sustainability In
           Construction Projects
         </div>
-        <p>
+        <p class="text-2xl text-primaryGrey">
           In the fast-paced world of construction, where innovation and sustainability take center stage, Yapisu is
           redefining the future with new standards. We don’t just offer comprehensive non-residential construction
           services; we design architectural experiences that make a difference. Our modern engineering solutions enhance
@@ -60,11 +60,11 @@ function toggleSection(section) {
         tabindex="0"
         :class="['collapse', 'collapse-arrow', 'my-10', { 'collapse-open': openSection === 'mission' }]"
         @click="toggleSection('mission')">
-      <div class="collapse-title text-xl font-medium text-gray-700">Mission</div>
-      <div class="collapse-content text-lg text-gray-600 leading-relaxed">
-        <div class="text-xl font-medium text-primaryRed">Excellence In Construction: Our Commitment To Driving Change
+      <div class="collapse-title text-4xl font-medium text-gray-700">Mission</div>
+      <div class="collapse-content text-justify  text-lg text-gray-600 leading-relaxed">
+        <div class="text-2xl font-medium text-primaryRed">Excellence In Construction: Our Commitment To Driving Change
         </div>
-        <p>
+        <p class="text-2xl text-primaryGrey">
           Our mission is to empower our clients to transform their visions into reality, whether in building commercial
           complexes, healthcare facilities, or advanced infrastructure projects.
           We achieve this through a collaborative approach that places clear communication, integrity, and attention to
@@ -83,11 +83,11 @@ function toggleSection(section) {
         tabindex="0"
         :class="['collapse', 'collapse-arrow', 'my-10', { 'collapse-open': openSection === 'Efficiency' }]"
         @click="toggleSection('Efficiency')">
-      <div class="collapse-title text-xl font-medium text-gray-700">Efficiency</div>
-      <div class="  collapse-content text-lg text-gray-600 leading-relaxed">
-        <div class="text-xl font-medium text-primaryRed">Distinct Pillars: Enduring Efficiency And Continuous Progress
+      <div class="collapse-title text-4xl font-medium text-gray-700">Efficiency</div>
+      <div class="  collapse-content  text-justify text-lg text-gray-600 leading-relaxed">
+        <div class="text-2xl font-medium text-primaryRed">Distinct Pillars: Enduring Efficiency And Continuous Progress
         </div>
-        <p>
+        <p class="text-2xl text-primaryGrey">
           In the ever-evolving world of construction, Yapisu stands out as a name synonymous with efficiency and
           excellence. Understanding that success is not only measured by experience but also by the ability to adapt to
           changes, utilize resources smartly, and apply the highest engineering standards, the company has established

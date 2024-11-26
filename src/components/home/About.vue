@@ -4,10 +4,11 @@ import router from "@/router/index.js"
 const AboutPage = () => {
   router.push('/about')
 };
+
 </script>
 
 <template>
-  <div class="pb-12">
+  <div>
     <div class="flex flex-col  space-y-6 lg:px-20">
       <h1 class="font-bold lg:text-5xl text-3xl">About <span class="font-bold  text-primaryRed">Yapisu</span></h1>
       <p class="text-2xl text-justify">
@@ -23,7 +24,7 @@ const AboutPage = () => {
         efficiency
       </p>
       <button @click="AboutPage"
-          class="rounded-full hover:bg-primaryGrey transition-all ease-in-out  text-white w-fit py-4 px-10 bg-primaryRed">
+              class="transition-all ease-in-out  rounded-full hover:bg-primaryGrey transition-all ease-in-out  text-white w-fit py-4 px-10 bg-primaryRed">
         Read more
       </button>
 

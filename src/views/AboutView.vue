@@ -16,6 +16,12 @@ import Text from "@/components/About/Text.vue";
 import Values from "@/components/About/Values.vue";
 import TextBold from "@/components/About/TextBold.vue";
 import Toggle from "@/components/About/Toggle.vue";
+
+import {onMounted} from "vue";
+
+onMounted(() => {
+  window.scrollTo(0, 0);
+});
 </script>
 <style>
 

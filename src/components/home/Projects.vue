@@ -27,7 +27,7 @@ const homeProjects =[
 </script>
 
 <template>
-  <div class="xl:px-20 flex flex-col space-y-10">
+  <div class="xl:px-20 pb-12 flex flex-col space-y-10">
     <router-link
       class="flex items-center lg:space-x-2 space-x-1"
       to="/projects"
