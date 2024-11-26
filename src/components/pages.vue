@@ -1,12 +1,12 @@
 <script setup lang="js">
-import CompanyProfile from "/public/company-profile.pdf"
+// import CompanyProfile from "/public/company-profile.pdf"
 
-function downloadProfile() {
-  const link = document.createElement('a');
-  link.href = CompanyProfile; 
-  link.download = 'CompanyProfile.pdf'; 
-  link.click();
-}
+// function downloadProfile() {
+//   const link = document.createElement('a');
+//   link.href = CompanyProfile; 
+//   link.download = 'CompanyProfile.pdf'; 
+//   link.click();
+// }
 
 const pages = [
   {
@@ -44,7 +44,7 @@ const pages = [
       </router-link>
       <button
         class="text-lg hover:text-primaryRed hover:font-bold hover:underline"
-        @click="downloadProfile"
+        
       >
         Company Profile
       </button>
