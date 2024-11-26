@@ -55,7 +55,5 @@ const pages = [
   >
     {{ page.name }}
   </router-link>
-  <button :class="baseClass">
-    Company Profile
-  </button>
+  
 </template>
