@@ -3,49 +3,59 @@
 
 // function downloadProfile() {
 //   const link = document.createElement('a');
-//   link.href = CompanyProfile; 
-//   link.download = 'CompanyProfile.pdf'; 
+//   link.href = CompanyProfile;
+//   link.download = 'CompanyProfile.pdf';
 //   link.click();
 // }
 
+import { defineProps } from "vue";
+
+defineProps({
+  baseClass: {
+    type: String,
+    default: "text-lg hover:text-primaryRed transition-all ease-in-out hover:underline",
+  },
+  activeClass: {
+    type: String,
+    default: "text-primaryRed font-bold underline",
+  },
+});
+
 const pages = [
   {
-    name: 'Home',
+    name: "Home",
     route: "/",
-    click:null
+    click: null,
   },
   {
-    name: 'About Us',
+    name: "About Us",
     route: "/about",
-    click:null
+    click: null,
   },
   {
-    name: 'Projects',
+    name: "Projects",
     route: "/projects",
-    click:null
+    click: null,
   },
   {
-    name: 'Gallery',
+    name: "Gallery",
     route: "/gallery",
-    click:null
+    click: null,
   },
 ];
 </script>
 
 <template>
- <router-link
-        v-for="page in pages"
-        :key="page.name"
-        :to="page.route"
-        class="text-lg hover:text-primaryRed hover:font-bold hover:underline"
-        active-class="text-primaryRed font-bold underline"
-      >
-        {{ page.name }}
-      </router-link>
-      <button
-        class="text-lg hover:text-primaryRed hover:font-bold hover:underline"
-        
-      >
-        Company Profile
-      </button>
+  <router-link
+    v-for="page in pages"
+    :key="page.name"
+    :to="page.route"
+    :class="baseClass"
+    :active-class="activeClass"
+  >
+    {{ page.name }}
+  </router-link>
+  <button :class="baseClass">
+    Company Profile
+  </button>
 </template>

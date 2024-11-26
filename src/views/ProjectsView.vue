@@ -3,6 +3,12 @@ import { ref, computed } from "vue";
 import ProjectCard from "@/components/ProjectCard.vue";
 import { projects } from "@/includes/db";
 
+import { onMounted } from "vue";
+
+onMounted(() => {
+  window.scrollTo(0, 0);
+});
+
 const rowsPerPage = 6;
 const currentPage = ref(1);
 const totalPages = computed(() => Math.ceil(projects.length / rowsPerPage));
@@ -15,12 +21,14 @@ const paginatedProjects = computed(() => {
 const nextPage = () => {
   if (currentPage.value < totalPages.value) {
     currentPage.value++;
+    window.scrollTo(0, 0);
   }
 };
 
 const prevPage = () => {
   if (currentPage.value > 1) {
     currentPage.value--;
+    window.scrollTo(0, 0);
   }
 };
 
@@ -28,14 +36,16 @@ const setPage = (page) => {
   if (page >= 1 && page <= totalPages.value) {
     currentPage.value = page;
   }
+  window.scrollTo(0,0);
+
 };
 </script>
 
 <template>
   <div class="flex flex-col items-center w-full space-y-6">
     <h1 class="font-bold lg:text-[50px] text-2xl md:text-3xl">
-        Projects and Achievements
-      </h1>
+      Projects and Achievements
+    </h1>
     <div
       class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-7xl px-4"
     >

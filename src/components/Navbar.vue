@@ -20,7 +20,10 @@ const toggleDrawer = (state) => {
   >
     <img src="../assets/images/Yapisu_Logo 2.svg" alt="" class="lg:w-32 w-20" />
     <div class="lg:flex space-x-12 hidden">
-      <Pages />
+      <Pages 
+  baseClass="text-lg hover:text-primaryRed transition-all ease-in-out hover:underline" 
+  activeClass="text-primaryRed font-bold underline" 
+/>
     </div>
     <button
       @click="toggleDrawer(true)"
@@ -47,7 +50,10 @@ const toggleDrawer = (state) => {
     >
       <i class="pi pi-times"></i>
     </button>
-    <Pages />
+    <Pages 
+  baseClass="text-lg hover:text-primaryRed transition-all ease-in-out hover:underline" 
+  activeClass="text-primaryRed font-bold underline" 
+/>
   </div>
 </template>
 

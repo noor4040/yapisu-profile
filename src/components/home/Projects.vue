@@ -32,7 +32,7 @@ const homeProjects =[
       class="flex items-center lg:space-x-2 space-x-1"
       to="/projects"
     >
-      <h1 class="font-bold lg:text-[65px] text-2xl md:text-3xl">
+      <h1 class="font-bold lg:text-[65px] text-2xl md:text-3xl hover:text-primaryRed">
         Projects and Achievements
       </h1>
       <div class="rounded-full flex items-center p-1 bg-primaryRed text-white">

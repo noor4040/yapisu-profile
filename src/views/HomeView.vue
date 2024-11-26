@@ -11,7 +11,8 @@ import About from "@/components/home/About.vue";
     <Banner />
     <div
       class="flex flex-col lg:space-y-16 lg:px-20 xl:px-24 px-4 space-y-14 md:px-16"
-    >
+
+      >
       <Services></Services>
       <Efficiency/>
       <Projects/>

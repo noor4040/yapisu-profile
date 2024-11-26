@@ -8,8 +8,11 @@ import Pages from './pages.vue';
     style="background-image: url('/public/footer.png')"
   >
     <img src="../assets/images/white-logo.png" alt="" class="w-32" />
-    <div class="flex  text-white space-x-4 lg:text-center lg:justify-center">
-     <Pages />
+    <div class="flex text-white space-x-4 lg:text-center lg:justify-center">
+      <Pages
+        baseClass="text-lg hover:text-white transition-all ease-in-out hover:underline"
+        activeClass="text-white font-bold underline"
+      />
     </div>
   </div>
 </template>
