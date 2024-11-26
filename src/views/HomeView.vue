@@ -7,10 +7,10 @@ import About from "@/components/home/About.vue";
 </script>
 
 <template>
-  <main class="flex flex-col lg:space-y-24 space-y-14">
+  <main class="flex flex-col lg:space-y-24 space-y-14 2xl:space-y-64">
     <Banner />
     <div
-      class="flex flex-col lg:space-y-24 lg:px-20 xl:px-24 px-4 space-y-14 md:px-16"
+      class="flex flex-col lg:space-y-24 lg:px-20 xl:px-24 px-4 space-y-14 md:px-16 2xl:space-y-64"
     >
       <About/>
       <Services></Services>

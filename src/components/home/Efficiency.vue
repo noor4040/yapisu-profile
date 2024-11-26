@@ -56,7 +56,6 @@
 <!--  </div>-->
 <!--</template>-->
 
-
 <script lang="js" setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue';
 
@@ -131,30 +130,43 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <div class="xl:px-20 xl:py-16  flex flex-col md:flex-row justify-between items-center space-y-4">
-    <div class="md:w-[500px] flex flex-col space-y-8">
-      <div class="flex flex-col space-y-12 justify-center content-center items-start">
-        <h1 class="lg:text-5xl md:text-3xl font-bold text-xl">
+  <div
+    class="xl:px-20 xl:py-16 flex flex-col md:flex-row justify-between items-center space-y-4 2xl:px-40"
+  >
+    <div class="xl:w-[500px] md:w-[300px] flex flex-col space-y-8 2xl:w-[900px]">
+      <div
+        class="flex flex-col xl:space-y-12 md:space-y-6 justify-center content-center items-start"
+      >
+        <h1 class="xl:text-5xl lg:text-3xl md:text-2xl font-bold text-xl 2xl:text-[60px]">
           Enduring efficiency and continuous progress
         </h1>
-        <p class="lg:text-2xl text-justify text-md">
-          Every project we undertake represents an opportunity to demonstrate our ability to achieve the highest levels of efficiency while prioritizing client needs and satisfaction.
+        <p class="lg:text-2xl text-justify text-md 2xl:text-[40px] 2xl:leading-10">
+          Every project we undertake represents an opportunity to demonstrate
+          our ability to achieve the highest levels of efficiency while
+          prioritizing client needs and satisfaction.
         </p>
       </div>
-
-
     </div>
 
     <div>
-<!--      <img src="@/assets/images/efficiency.png" alt="" class="rounded-lg w-[400px] md:w-[300px]" />-->
-      <div class="grid grid-cols-2 lg:gap-x-[40px] lg:gap-y-24 gap-5 counter-section">
+      <!--      <img src="@/assets/images/efficiency.png" alt="" class="rounded-lg w-[400px] md:w-[300px]" />-->
+      <div
+        class="grid grid-cols-2 lg:gap-x-[40px] lg:gap-y-24 gap-5 counter-section 2xl:gap-x-[70px] 2xl:gap-y-[100px]"
+      >
         <div v-for="(counter, index) in counters" :key="index">
-          <h1 class="lg:text-[60px] text-xl">{{
-              index === 0 ? obj1 :
-                  index === 1 ? obj2 :
-                      index === 2 ? obj3 : obj4
-            }} +</h1>
-          <h1 class="lg:text-[25px] mt-4 text-sm text-primaryRed">
+          <h1 class=" xl:text-[60px] md:text-[40px] text-xl 2xl:text-[80px] 2xl:pb-[30px]">
+            {{
+              index === 0
+                ? obj1
+                : index === 1
+                ? obj2
+                : index === 2
+                ? obj3
+                : obj4
+            }}
+            +
+          </h1>
+          <h1 class="lg:text-[25px] mt-4 text-sm text-primaryRed 2xl:text-[40px]">
             {{ counter.title }}
           </h1>
         </div>
@@ -162,4 +174,3 @@ onBeforeUnmount(() => {
     </div>
   </div>
 </template>
-

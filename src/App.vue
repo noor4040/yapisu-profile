@@ -9,12 +9,13 @@ import Footer from "./components/Footer.vue";
     <Navbar />
     <RouterView />
     <Footer />
-    
+
     <!-- Floating Button -->
     <button
-      class="fixed right-5 bottom-5 px-6 py-3 text-white font-bold rounded-full shadow-lg"
+      class="fixed right-5 bottom-5 px-6 py-3 text-white font-bold rounded-full shadow-lg 2xl:text-[40px]"
       :style="{
-        background: 'linear-gradient(45deg, var(--primaryRed), var(--primaryGrey))',
+        background:
+          'linear-gradient(45deg, var(--primaryRed), var(--primaryGrey))',
       }"
     >
       Company Profile
@@ -30,7 +31,7 @@ body {
 }
 
 :root {
-  --primaryRed: #ac393b; /* Replace with your exact primaryRed color */
-  --primaryGrey: #3D3B47; /* Replace with your exact primaryGrey color */
+  --primaryRed: #ac393b;
+  --primaryGrey: #3d3b47;
 }
 </style>

@@ -13,7 +13,7 @@ const homeProjects =[
   },
   {
     name:'Transportation of Superstructure Materials for İzmir-Çeşme Highway',
-    location:'İzmı̇ r Çeşme Otoyolu Üst Yapi Malzemelerı̇ Naklı̇ .',
+    location:'İzmı̇ r Çeşme Otoyolu Üst Yapi Malzemelerı̇',
     date:1993,
     image :Superstructure
   },
@@ -27,7 +27,7 @@ const homeProjects =[
 </script>
 
 <template>
-  <div class="xl:px-20 pb-12 flex flex-col space-y-10">
+  <div class="xl:px-20 pb-12 flex flex-col space-y-10 2xl:px-40 2xl:pb-32">
     <router-link
       class="flex items-center lg:space-x-2 space-x-1"
       to="/projects"
@@ -35,8 +35,8 @@ const homeProjects =[
       <h1 class="font-bold lg:text-[65px] text-2xl md:text-3xl hover:text-primaryRed">
         Projects and Achievements
       </h1>
-      <div class="rounded-full flex items-center p-1 bg-primaryRed text-white">
-        <i class="pi pi-arrow-up-right text-xl lg:text-[2.5rem]"></i>
+      <div class="rounded-full flex items-center p-1 bg-primaryRed text-white text-xl lg:text-[2.5rem] 2xl:text-[40px]">
+        <i class="pi pi-arrow-up-right "></i>
       </div>
     </router-link>
 
