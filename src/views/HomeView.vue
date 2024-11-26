@@ -8,7 +8,9 @@ import Projects from "@/components/home/Projects.vue";
 <template>
   <main class="flex flex-col lg:space-y-16 space-y-14">
     <Banner />
-    <div class="flex flex-col lg:space-y-16 lg:px-20 xl:px-24 px-4 space-y-14 md:px-16" >
+    <div
+      class="flex flex-col lg:space-y-16 lg:px-20 xl:px-24 px-4 space-y-14 md:px-16"
+    >
       <Services></Services>
       <Efficiency />
       <Projects />

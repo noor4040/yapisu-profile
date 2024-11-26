@@ -1,26 +1,5 @@
 <script setup lang="js">
-const pages = [
-  {
-    name: 'Home',
-    route: "/"
-  },
-  {
-    name: 'About Us',
-    route: "/about"
-  },
-  {
-    name: 'Projects',
-    route: "/projects"
-  },
-  {
-    name: 'Library',
-    route: "/library"
-  },
-  {
-    name: 'Company profile',
-    route: "/company-profile"
-  },
-];
+import Pages from './pages.vue';
 </script>
 
 <template>
@@ -30,9 +9,7 @@ const pages = [
   >
     <img src="../assets/images/white-logo.png" alt="" class="w-32" />
     <div class="flex  text-white space-x-4 lg:text-center lg:justify-center">
-      <router-link v-for="page in pages" :to="page.route">
-        {{ page.name }}
-      </router-link>
+     <Pages />
     </div>
   </div>
 </template>

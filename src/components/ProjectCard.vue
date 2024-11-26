@@ -9,7 +9,7 @@ defineProps({
 
 <template>
   <div
-    class="card p-3 bg-gray-50 rounded-box transition-transform transform hover:scale-105"
+    class="card p-3 bg-gray-50 h-[500px] rounded-box transition-transform transform hover:scale-105"
   >
     <figure class="relative">
       <img

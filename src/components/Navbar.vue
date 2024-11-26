@@ -1,27 +1,6 @@
 <script setup lang="js">
 import { ref } from 'vue';
-const pages = [
-  {
-    name: 'Home',
-    route: "/"
-  },
-  {
-    name: 'About Us',
-    route: "/about"
-  },
-  {
-    name: 'Projects',
-    route: "/projects"
-  },
-  {
-    name: 'Gallery',
-    route: "/gallery"
-  },
-  {
-    name: 'Company profile',
-    route: "/company-profile"
-  },
-];
+import Pages from './pages.vue';
 const isDrawerOpen = ref(false);
 
 const toggleDrawer = (state) => {
@@ -33,10 +12,6 @@ const toggleDrawer = (state) => {
     }, 500);
   }
 };
-const navigateToPage = (path) => {
-  router.push(path); // Navigate to the selected page
-  toggleDrawer(false); // Close the drawer
-};
 </script>
 
 <template>
@@ -45,15 +20,7 @@ const navigateToPage = (path) => {
   >
     <img src="../assets/images/Yapisu_Logo 2.svg" alt="" class="lg:w-32 w-20" />
     <div class="lg:flex space-x-12 hidden">
-      <router-link
-        v-for="page in pages"
-        :key="page.name"
-        :to="page.route"
-        class="text-lg hover:text-primaryRed hover:font-bold hover:underline"
-        active-class="text-primaryRed font-bold underline"
-      >
-        {{ page.name }}
-      </router-link>
+      <Pages />
     </div>
     <button
       @click="toggleDrawer(true)"
@@ -69,7 +36,7 @@ const navigateToPage = (path) => {
     v-if="isDrawerOpen"
     id="drawer-navigation"
     :class="[
-      'fixed top-0 left-0 z-50 h-screen p-4 overflow-y-auto bg-white w-64  flex flex-col space-y-4 shadow-md',
+      'fixed top-0  right-0 z-50 h-screen p-4 overflow-y-auto bg-white w-64   space-y-4 shadow-md flex flex-col items-start pt-8',
     ]"
   >
     <button
@@ -80,15 +47,7 @@ const navigateToPage = (path) => {
     >
       <i class="pi pi-times"></i>
     </button>
-    <router-link
-      v-for="page in pages"
-      :key="page.name"
-      :to="page.route"
-      class="text-lg hover:text-primaryRed hover:font-bold hover:underline text-black"
-      active-class="text-primaryRed font-bold underline"
-    >
-      {{ page.name }}
-    </router-link>
+    <Pages />
   </div>
 </template>
 

@@ -4,7 +4,8 @@
 
 <template>
   <div
-    class="relative w-full lg:h-[600px] h-[400px] bg-cover bg-center flex items-center lg:px-20 px-4 md:px-16"
+    class="relative w-full lg:h-[600px] h-[400px] bg-cover bg-center flex items-center lg:px-20 px-4 md:px-16
+    "
     style="background-image: url('/public/banner.jpg')"
   >
     <!-- Dark overlay -->
