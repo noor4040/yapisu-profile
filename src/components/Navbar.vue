@@ -49,7 +49,7 @@ const navigateToPage = (path) => {
         v-for="page in pages"
         :key="page.name"
         :to="page.route"
-        class="text-lg hover:text-primaryRed hover:font-bold hover:underline"
+        class="text-lg hover:text-primaryRed  transition-all ease-in-out hover:underline"
         active-class="text-primaryRed font-bold underline"
       >
         {{ page.name }}

@@ -1,68 +1,93 @@
 <template>
-  <div class="card">
-    <Galleria :value="images" :responsiveOptions="responsiveOptions" :numVisible="5" containerStyle="max-width: 640px">
+  <div class="card  flex justify-center items-center px-10 py-10">
+    <Galleria
+        :value="projects"
+        :responsiveOptions="responsiveOptions"
+        :numVisible="5"
+        containerStyle="max-width: 1200px"
+        class="border-none"
+    >
       <template #item="slotProps">
-        <img :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt" style="width: 100%; display: block" />
+        <div class="relative mb-8 w-full">
+          <img
+              :src="slotProps.item.image"
+              :alt="slotProps.item.location"
+              class="w-full h-[500px] object-cover rounded-md"
+          />
+          <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 rounded-md text-white p-4">
+            <div class="text-2xl font-bold mb-2">{{ slotProps.item.name }}</div>
+            <p class="text-lg">{{ slotProps.item.location }}</p>
+          </div>
+        </div>
       </template>
       <template #thumbnail="slotProps">
-        <img :src="slotProps.item.thumbnailImageSrc" :alt="slotProps.item.alt" style="display: block" />
-      </template>
-      <template #caption="slotProps">
-        <div class="text-xl mb-2 font-bold">{{ slotProps.item.title }}</div>
-        <p class="text-white">{{ slotProps.item.alt }}</p>
+        <img
+            :src="slotProps.item.image"
+            :alt="slotProps.item.location"
+            class="block w-48 h-40 object-cover mb-8 rounded-md"
+        />
       </template>
     </Galleria>
   </div>
 </template>
 
 <script setup>
-import Galleria from 'primevue/galleria';
-import { ref } from "vue";
-import project1 from "@/assets/images/Project 1 & 2_1.jpg"
-import project2 from "@/assets/images/Project 20_2.jpg"
-// Define the list of images directly in this component
-const images = ref([
-  {
-    itemImageSrc: project1,
-    thumbnailImageSrc: project1,
-    alt: "Description for Image 1",
-    title: "Title 1",
-  },
-  {
-    itemImageSrc: project1,
-    thumbnailImageSrc: project1,
-    alt: "Description for Image 2",
-    title: "Title 2",
-  },
-  {
-    itemImageSrc: project2,
-    thumbnailImageSrc: project2,
-    alt: "Description for Image 3",
-    title: "Title 3",
-  },
-  {
-    itemImageSrc: project2,
-    thumbnailImageSrc: project2,
-    alt: "Description for Image 3",
-    title: "Title 3",
-  },
-  {
-    itemImageSrc: project1,
-    thumbnailImageSrc: project1,
-    alt: "Description for Image 3",
-    title: "Title 3",
-  },
-  // Add more items here as needed
-]);
+import Galleria from "primevue/galleria";
+import {projects} from "@/includes/db"; // Import the projects list
 
-const responsiveOptions = ref([
-  {
-    breakpoint: "1300px",
-    numVisible: 4,
-  },
-  {
-    breakpoint: "575px",
-    numVisible: 1,
-  },
-]);
+const responsiveOptions = [
+  {breakpoint: "1024px", numVisible: 3},
+  {breakpoint: "768px", numVisible: 2},
+  {breakpoint: "576px", numVisible: 1},
+];
 </script>
+
+<style scoped>
+.card {
+  width: 100%;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.bg-black {
+  background-color: rgba(0, 0, 0, 0.42);
+}
+
+.text-white {
+  color: #fff;
+}
+</style>
+
+
+<style scoped>
+.card {
+  width: 100%;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.bg-black {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.text-white {
+  color: #fff;
+}
+
+.p-galleria {
+  border: none; /* Added this line to remove border */
+}
+
+</style>
