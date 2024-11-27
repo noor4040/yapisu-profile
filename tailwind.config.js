@@ -11,8 +11,8 @@ export default {
         "2xl": "2560px",
       },
       container: {
-        center: true, // Centers the container horizontally
-        padding: "0", // Removes any default padding
+        center: true,
+        padding: "0",
       },
     },
   },

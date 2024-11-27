@@ -1,6 +1,7 @@
 <script setup lang="js">
-import { ref } from 'vue';
-import Pages from './pages.vue';
+import { ref } from "vue";
+import Pages from "./pages.vue";
+
 const isDrawerOpen = ref(false);
 
 const toggleDrawer = (state) => {
@@ -11,6 +12,10 @@ const toggleDrawer = (state) => {
       isDrawerOpen.value = false;
     }, 500);
   }
+};
+
+const handleLinkClick = () => {
+  isDrawerOpen.value = false;
 };
 </script>
 
@@ -34,7 +39,6 @@ const toggleDrawer = (state) => {
         />
       </nav>
 
-      <!-- Mobile Hamburger Icon -->
       <button
         @click="toggleDrawer(true)"
         type="button"
@@ -45,7 +49,6 @@ const toggleDrawer = (state) => {
       </button>
     </div>
 
-    <!-- Mobile Drawer -->
     <div
       v-if="isDrawerOpen"
       id="drawer-navigation"
@@ -64,6 +67,7 @@ const toggleDrawer = (state) => {
       <Pages
         baseClass="text-lg hover:text-primaryRed transition-all ease-in-out hover:underline"
         activeClass="text-primaryRed font-bold underline"
+        @link-click="handleLinkClick"
       />
     </div>
   </header>

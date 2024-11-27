@@ -1,14 +1,5 @@
 <script setup lang="js">
-// import CompanyProfile from "/public/company-profile.pdf"
-
-// function downloadProfile() {
-//   const link = document.createElement('a');
-//   link.href = CompanyProfile;
-//   link.download = 'CompanyProfile.pdf';
-//   link.click();
-// }
-
-import { defineProps } from "vue";
+import { defineProps, defineEmits } from "vue";
 
 defineProps({
   baseClass: {
@@ -43,6 +34,8 @@ const pages = [
     click: null,
   },
 ];
+
+defineEmits(["link-click"]);
 </script>
 
 <template>
@@ -52,8 +45,8 @@ const pages = [
     :to="page.route"
     :class="baseClass"
     :active-class="activeClass"
+    @click="$emit('link-click')"
   >
     {{ page.name }}
   </router-link>
-  
 </template>
