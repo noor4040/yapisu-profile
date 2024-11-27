@@ -35,10 +35,10 @@ const services = [
 </script>
 
 <template>
-  <div class="flex flex-col lg:space-y-6 xl:px-20 space-y-4 2xl:px-40">
+  <div class="flex flex-col lg:space-y-6 xl:px-20 space-y-4 2xl:container">
     <div class="flex flex-col space-y-2">
-      <h1 class="font-bold lg:text-5xl text-3xl 2xl:text-[70px]">Services</h1>
-      <p class="lg:text-2xl text-xl 2xl:text-[40px]">
+      <h1 class="font-bold lg:text-5xl text-3xl ">Services</h1>
+      <p class="lg:text-2xl text-xl ">
         <span class="font-bold">Diverse services:</span> projects that reflect
         ambitions and meet every need
       </p>
@@ -51,8 +51,8 @@ const services = [
         v-for="service in services"
         class="flex flex-col justify-center items-center cursor-pointer transition-all ease-in-out shadow-sm hover:shadow-md p-4 rounded-lg text-center space-y-2"
       >
-        <img :src="service.image" alt="" class="w-12 2xl:w-36" />
-        <h1 class="md:w-40 w-32 2xl:w-full 2xl:text-[30px]">
+        <img :src="service.image" alt="" class="w-12" />
+        <h1 class="md:w-40 w-32 2xl:w-full ">
           {{ service.title }}
         </h1>
       </div>

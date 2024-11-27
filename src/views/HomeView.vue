@@ -7,16 +7,15 @@ import About from "@/components/home/About.vue";
 </script>
 
 <template>
-  <main class="flex flex-col lg:space-y-24 space-y-14 2xl:space-y-64">
+  <main class="flex flex-col lg:space-y-24 space-y-14 2xl:container">
     <Banner />
     <div
-      class="flex flex-col lg:space-y-24 lg:px-20 xl:px-24 px-4 space-y-14 md:px-16 2xl:space-y-64"
+      class="flex flex-col lg:space-y-24 lg:px-20 xl:px-24 px-4 space-y-14 md:px-16 2xl:container"
     >
-      <About/>
+      <About />
       <Services></Services>
-      <Efficiency/>
-      <Projects/>
-
+      <Efficiency />
+      <Projects />
     </div>
   </main>
 </template>
