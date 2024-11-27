@@ -13,7 +13,7 @@ export default {
       },
       extend: {
         screens: {
-          "2xl": "3840px",
+          "2xl": "2560px",
         },
       },
     },
