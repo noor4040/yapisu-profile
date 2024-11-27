@@ -1,10 +1,9 @@
 <template>
-  <div class="card  flex justify-center items-center px-10 py-10">
+  <div class="card  flex justify-center items-center px-4 py-10 2xl:py-24 lg:px-24 2xl:px-60">
     <Galleria
         :value="projects"
         :responsiveOptions="responsiveOptions"
         :numVisible="5"
-        containerStyle="max-width: 1200px"
         class="border-none"
     >
       <template #item="slotProps">
@@ -12,11 +11,11 @@
           <img
               :src="slotProps.item.image"
               :alt="slotProps.item.location"
-              class="w-full h-[500px] object-cover rounded-md"
+              class="w-full h-[500px] object-cover rounded-md 2xl:h-[900px]"
           />
           <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 rounded-md text-white p-4">
-            <div class="text-2xl font-bold mb-2">{{ slotProps.item.name }}</div>
-            <p class="text-lg">{{ slotProps.item.location }}</p>
+            <div class="md:text-2xl text-sm font-bold mb-2 2xl:mb-8 2xl:text-[40px]">{{ slotProps.item.name }}</div>
+            <p class="md:text-lg text-sm 2xl:text-[30px]">{{ slotProps.item.location }}</p>
           </div>
         </div>
       </template>
