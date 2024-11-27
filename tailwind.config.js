@@ -17,6 +17,11 @@ export default {
       primaryRed :'#852F31',
       primaryGrey:"#3D3B47"
       },
+      extend: {
+        screens: {
+          '2xl': '2560px', 
+        },
+      },
      
     },
   },

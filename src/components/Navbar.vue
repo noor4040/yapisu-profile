@@ -23,7 +23,7 @@ const toggleDrawer = (state) => {
       <img
         src="../assets/images/Yapisu_Logo 2.svg"
         alt="Logo"
-        class="lg:w-32 w-20 2xl:w-60"
+        class="lg:w-32 w-20 2xl:hidden"
       />
       
       <!-- Desktop Navigation -->
