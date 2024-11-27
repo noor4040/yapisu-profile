@@ -2,20 +2,19 @@
 export default {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
-  },
-  plugins: [require("daisyui")],
-  theme: {
     extend: {
       colors: {
         primaryRed: "#852F31",
         primaryGrey: "#3D3B47",
       },
-      extend: {
-        screens: {
-          "2xl": "2560px",
-        },
+      screens: {
+        "2xl": "2560px",
+      },
+      container: {
+        center: true, // Centers the container horizontally
+        padding: "0", // Removes any default padding
       },
     },
   },
+  plugins: [require("daisyui")],
 };
