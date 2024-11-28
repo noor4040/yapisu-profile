@@ -38,5 +38,64 @@
   "qualifiedEngineers": "Qualified Engineers",
   "satisfiedClients": "Satisfied Clients",
   "Projects and Achievements": "Projects and Achievements",
-  "Starting Date:": "Starting Date:"
+  "Starting Date:": "Starting Date:",
+
+  "aboutBanner": {
+    "about": "About",
+    "title": "Yapisu",
+    "description": "Effective Partnership: The Path to Success and Excellence"
+  },
+  "aboutSection": {
+    "title": "Yapisu",
+    "description": "Yapisu is a leading company specializing in non-residential construction, offering innovative and modern engineering solutions that align with the latest technologies and global standards. At Yapisu, we believe construction is not just about building structures but about the art of transforming ideas into architectural experiences that inspire and remain memorable. Our goal is to become true partners in shaping the future, creating vibrant buildings that enhance individual well-being and fulfill community aspirations. We are committed to applying cutting-edge technologies to deliver projects that exceed expectations, contributing to the development of resilient communities capable of meeting the challenges of tomorrow."
+  },
+
+  "values": {
+    "quality": {
+      "title": "QUALITY",
+      "description": "Yapisu ensures excellence with advanced technologies and top-quality materials, exceeding client expectations at every stage."
+    },
+    "innovation": {
+      "title": "INNOVATION AND DEVELOPMENT",
+      "description": "Innovation drives Yapisu's strategy, leveraging modern technologies to enhance efficiency, cut costs, and meet evolving market needs."
+    },
+    "safety": {
+      "title": "SAFETY STANDARDS",
+      "description": "Yapisu prioritizes safety, enforcing top standards and protocols at every stage to ensure a secure environment for employees and clients."
+    },
+    "transparency": {
+      "title": "TRANSPARENCY",
+      "description": "Yapisu builds trust through transparency, ensuring open communication on costs, timelines, and challenges for seamless project success."
+    },
+    "timelyDelivery": {
+      "title": "TIMELY DELIVERY",
+      "description": "Yapisu excels in time management, consistently delivering projects on schedule and earning trust for large-scale endeavors."
+    },
+    "sustainability": {
+      "title": "SUSTAINABLE SOLUTIONS",
+      "description": "Yapisu champions sustainability, adopting eco-friendly practices to minimize impact and support sustainable development in communities."
+    }
+  },
+  "textBoldInAbout": "At Yapisu, We Build With Creativity, Determination For Quality And Excellence, Leaving Our Mark As A Symbol Of Added Value And Enduring Innovation",
+  "sections": {
+    "overview": {
+      "title": "Company Overview",
+      "description": "From industrial buildings and hospitals to hotels, schools, shopping centers, sports facilities, and mosques, our projects embody diversity and inclusivity, focusing on developing infrastructure that drives progress. With our extensive experience and innovative vision, we combine modernity and sustainability to deliver projects that meet the highest standards of quality and economic efficiency. This is why investors consider us trusted partners for long-term investments, as we offer more than just construction solutions—we offer a sustainable future and projects that maintain their distinction for years to come."
+    },
+    "vision": {
+      "title": "Vision",
+      "subtitle": "Building The Future: Leading Innovation And Sustainability In Construction Projects",
+      "description": "In the fast-paced world of construction, where innovation and sustainability take center stage, Yapisu is redefining the future with new standards. We don’t just offer comprehensive non-residential construction services; we design architectural experiences that make a difference. Our modern engineering solutions enhance project quality, reduce environmental impact, and inspire a legacy of long-term excellence. The company excels in blending innovative designs with the latest technologies and an unwavering commitment to quality to deliver projects that meet the highest standards of efficiency and safety. We focus on building smart facilities that reduce long-term costs and enhance operational efficiency, all while preserving natural resources and supporting sustainable development goals."
+    },
+    "mission": {
+      "title": "Mission",
+      "subtitle": "Excellence In Construction: Our Commitment To Driving Change",
+      "description": "Our mission is to empower our clients to transform their visions into reality, whether in building commercial complexes, healthcare facilities, or advanced infrastructure projects. We achieve this through a collaborative approach that places clear communication, integrity, and attention to detail at the heart of our work—from conception to project delivery. With a focus on long-term impact, we do not merely construct buildings but help shape resilient communities and environments that are capable of facing future challenges, fostering growth, prosperity, and success for all stakeholders. Our philosophy is that construction is more than just routine work; it’s a promise of excellence, attention to detail, innovation, and a commitment to building a sustainable future for generations to come."
+    },
+    "efficiency": {
+      "title": "Efficiency",
+      "subtitle": "Distinct Pillars: Enduring Efficiency And Continuous Progress",
+      "description": "In the ever-evolving world of construction, Yapisu stands out as a name synonymous with efficiency and excellence. Understanding that success is not only measured by experience but also by the ability to adapt to changes, utilize resources smartly, and apply the highest engineering standards, the company has established itself as a leader in the sector. The company places great emphasis on human resources, believing that trained and innovative teams are the backbone of any successful project. This is why we continually invest in developing our teams’ skills through specialized training programs, equipping them with the latest technologies and knowledge to ensure innovative, high-quality solutions at every stage of construction."
+    }
+  }
 }

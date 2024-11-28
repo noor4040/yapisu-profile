@@ -1,30 +1,10 @@
-<script setup>
-
-</script>
-
 <template>
-
-
-  <div class="flex flex-col space-y-4 xl:px-20 px-4 2xl:px-60 ">
-
+  <div class="flex flex-col space-y-4 xl:px-20 px-4 2xl:px-60">
     <p class="text-2xl lg:text-justify 2xl:text-[45px] 2xl:leading-10">
-       <span class="font-bold  text-primaryRed">
-      Yapisu
-    </span> is a leading company specializing in non-residential construction, offering innovative and modern
-      engineering solutions that align with the latest technologies and global standards.
-      At Yapisu, we believe construction is not just about building structures but about the art of transforming ideas
-      into architectural experiences that inspire and remain memorable.
-      Our goal is to become true partners in shaping the future, creating vibrant buildings that enhance individual
-      well-being and fulfill community aspirations. We are committed to applying cutting-edge technologies to deliver
-      projects that exceed expectations, contributing to the development of resilient communities capable of meeting the
-      challenges of tomorrow.
+      <span class="font-bold text-primaryRed">
+        {{ $t("aboutSection.title") }}
+      </span>
+      {{ $t("aboutSection.description") }}
     </p>
-
   </div>
-
-
 </template>
-
-<style scoped>
-
-</style>

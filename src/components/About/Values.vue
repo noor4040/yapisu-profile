@@ -1,32 +1,11 @@
 <script setup lang="js">
-
-
 const values = [
-  {
-    title: ("QUALITY"),
-    description: ("Yapisu ensures excellence with advanced technologies and top-quality materials, exceeding client expectations at every stage.")
-  },
-  {
-    title: ("INNOVATION AND DEVELOPMENT"),
-    description: ("Innovation drives Yapisu's strategy, leveraging modern technologies to enhance efficiency, cut costs, and meet evolving market needs.")
-  },
-  {
-    title: ("SAFETY STANDARDS"),
-    description: ("Yapisu prioritizes safety, enforcing top standards and protocols at every stage to ensure a secure environment for employees and clients.")
-  },
-  {
-    title: ("TRANSPARENCY"),
-    description: ("Yapisu builds trust through transparency, ensuring open communication on costs, timelines, and challenges for seamless project success.")
-  },
-  {
-    title: ("TIMELY DELIVERY"),
-    description: ("Yapisu excels in time management, consistently delivering projects on schedule and earning trust for large-scale endeavors.")
-  },
-  {
-    title: ("SUSTAINABLE SOLUTIONS"),
-    description: ("Yapisu champions sustainability, adopting eco-friendly practices to minimize impact and support sustainable development in communities.")
-  },
-
+  { title: "values.quality.title", description: "values.quality.description" },
+  { title: "values.innovation.title", description: "values.innovation.description" },
+  { title: "values.safety.title", description: "values.safety.description" },
+  { title: "values.transparency.title", description: "values.transparency.description" },
+  { title: "values.timelyDelivery.title", description: "values.timelyDelivery.description" },
+  { title: "values.sustainability.title", description: "values.sustainability.description" },
 ];
 </script>
 
@@ -36,13 +15,18 @@ const values = [
       class="grid lg:grid-cols-3 lg:gap-8 grid-cols-1 gap-4 w-full self-center 2xl:text-[40px]"
     >
       <div
-        v-for="value in values"
-        class="flex flex-col border-l-4 hover:border-l-primaryRed cursor-pointer transition-all ease-in-out p-4 text-center space-y-2"
+        v-for="(value, index) in values"
+        :key="index"
+        class="flex flex-col border-l-4 rtl:border-r-4 rtl:border-l-0 hover:border-l-primaryRed rtl:hover:border-r-primaryRed cursor-pointer transition-all ease-in-out p-4 text-center space-y-2"
       >
-        <h1 class="md:w-50 w-50 font-bold text-xl text-primaryRed text-left 2xl:text-[45px]">
-          {{ value.title }}
+        <h1
+          class="md:w-50 w-50 font-bold text-xl text-primaryRed text-left rtl:text-right 2xl:text-[45px]"
+        >
+          {{ $t(value.title) }}
         </h1>
-        <p class="md:w-50 w-50 text-left">{{ value.description }}</p>
+        <p class="md:w-50 w-50 text-left rtl:text-right">
+          {{ $t(value.description) }}
+        </p>
       </div>
     </div>
   </div>
