@@ -41,23 +41,25 @@ const setPage = (page) => {
 </script>
 
 <template>
-  <div class="flex flex-col items-center w-full space-y-6 py-6 2xl:py-12 2xl:space-y-12">
+  <div
+    class="flex flex-col items-center w-full space-y-6 py-6 2xl:py-12 2xl:space-y-12"
+  >
     <h1 class="font-bold lg:text-[50px] text-2xl md:text-3xl 2xl:text-[60px]">
-      Projects and Achievements
+      {{ $t("Projects and Achievements") }}
     </h1>
     <div
-  class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full px-4 lg:px-20 2xl:px-60 place-items-center 2xl:gap-36	"
->
-  <div v-for="project in paginatedProjects" :key="project.name" class="p-2">
-    <ProjectCard :project="project" />
-  </div>
-</div>
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full px-4 lg:px-20 2xl:px-60 place-items-center 2xl:gap-36"
+    >
+      <div v-for="project in paginatedProjects" :key="project.name" class="p-2">
+        <ProjectCard :project="project" />
+      </div>
+    </div>
 
     <div class="flex items-center space-x-2 py-6 rtl:space-x-reverse">
       <button
         @click="prevPage"
         :disabled="currentPage === 1"
-        class=" 2xl:text-[40px] 2xl:px-6 px-3 py-1 bg-gray-300 text-gray-700 rounded-full hover:bg-gray-400 disabled:bg-gray-200 disabled:cursor-not-allowed"
+        class="2xl:text-[40px] 2xl:px-6 px-3 py-1 bg-gray-300 text-gray-700 rounded-full hover:bg-gray-400 disabled:bg-gray-200 disabled:cursor-not-allowed"
       >
         Prev
       </button>
