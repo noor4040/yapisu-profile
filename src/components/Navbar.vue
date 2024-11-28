@@ -1,7 +1,7 @@
 <script setup lang="js">
 import { ref } from "vue";
 import Pages from "./pages.vue";
-
+import LanguageSwitcher from "./LanguageSwitcher.vue";
 const isDrawerOpen = ref(false);
 
 const toggleDrawer = (state) => {
@@ -32,11 +32,13 @@ const handleLinkClick = () => {
       />
 
       <!-- Desktop Navigation -->
-      <nav class="lg:flex space-x-12 hidden 2xl:mr-20">
+      <nav class="lg:flex space-x-12 rtl:space-x-reverse hidden 2xl:mr-20">
         <Pages
           baseClass="text-lg hover:text-primaryRed transition-all ease-in-out hover:underline 2xl:text-2xl "
           activeClass="text-primaryRed font-bold underline"
         />
+        <LanguageSwitcher />
+
       </nav>
 
       <button

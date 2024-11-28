@@ -11,7 +11,8 @@ import mosqueImage from '@/assets/images/services-images/mosque 1.png';
 import parkingImage from '@/assets/images/services-images/parking-area 1.png';
 import prototypeImage from '@/assets/images/services-images/prototype 1.png';
 import sanitationImage from '@/assets/images/services-images/house-water-supply 1.png';
-
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n()
 const capitalizeTitle = (title) => {
   return title
     .toLowerCase()
@@ -19,28 +20,28 @@ const capitalizeTitle = (title) => {
 };
 
 const services = [
-  { title: capitalizeTitle("INDUSTRIAL BUILDINGS"), image: infraImage },
-  { title: capitalizeTitle("HOSPITALS AND MEDICAL CENTERS"), image: hospitalImage },
-  { title: capitalizeTitle("SCHOOLS AND EDUCATIONAL FACILITIES"), image: schoolImage },
-  { title: capitalizeTitle("HOTELS AND TOURISM FACILITIES"), image: hotelImage },
-  { title: capitalizeTitle("OFFICES AND WORKPLACES"), image: workplaceImage },
-  { title: capitalizeTitle("SHOPS AND SHOPPING CENTERS"), image: mallImage },
-  { title: capitalizeTitle("RESTAURANTS AND ENTERTAINMENT FACILITIES"), image: restaurantImage },
-  { title: capitalizeTitle("SPORTS VENUES AND FACILITIES"), image: arenaImage },
-  { title: capitalizeTitle("MOSQUES AND RELIGIOUS ESTABLISHMENTS"), image: mosqueImage },
-  { title: capitalizeTitle("PARKING LOTS AND PUBLIC FACILITIES"), image: parkingImage },
-  { title: capitalizeTitle("ENGINEERING AND PROJECT MANAGEMENT"), image: prototypeImage },
-  { title: capitalizeTitle("INSTALLATION AND REPAIR OF SANITATION SYSTEMS"), image: sanitationImage }
+  { title: "industrialBuildings", image: infraImage },
+  { title: "hospitals", image: hospitalImage },
+  { title: "schools", image: schoolImage },
+  { title: "hotels", image: hotelImage },
+  { title: "offices", image: workplaceImage },
+  { title: "shops", image: mallImage },
+  { title: "restaurants", image: restaurantImage },
+  { title: "sportsVenues", image: arenaImage },
+  { title: "mosques", image: mosqueImage },
+  { title: "parkingLots", image: parkingImage },
+  { title: "engineering", image: prototypeImage },
+  { title: "sanitation", image: sanitationImage }
 ];
 </script>
 
 <template>
   <div class="flex flex-col lg:space-y-6 xl:px-20 space-y-4 2xl:container">
     <div class="flex flex-col space-y-2">
-      <h1 class="font-bold lg:text-5xl text-3xl ">Services</h1>
-      <p class="lg:text-2xl text-xl ">
-        <span class="font-bold">Diverse services:</span> projects that reflect
-        ambitions and meet every need
+      <h1 class="font-bold lg:text-5xl text-3xl">{{ $t("Services") }}</h1>
+      <p class="lg:text-2xl text-xl">
+        <span class="font-bold">{{ $t("Diverse services") }}</span>
+        {{ $t("projects that reflect ambitions and meet every need") }}
       </p>
     </div>
 
@@ -52,8 +53,8 @@ const services = [
         class="flex flex-col justify-center items-center cursor-pointer transition-all ease-in-out shadow-sm hover:shadow-md p-4 rounded-lg text-center space-y-2"
       >
         <img :src="service.image" alt="" class="w-12" />
-        <h1 class="md:w-40 w-32 2xl:w-full ">
-          {{ service.title }}
+        <h1 class="md:w-40 w-32 2xl:w-full">
+          {{ $t(service.title) }}
         </h1>
       </div>
     </div>

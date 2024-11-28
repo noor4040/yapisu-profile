@@ -2,10 +2,17 @@
 import { RouterLink, RouterView } from "vue-router";
 import Navbar from "./components/Navbar.vue";
 import Footer from "./components/Footer.vue";
+import { useI18n } from "vue-i18n";
+import { computed } from "vue";
+const { locale } = useI18n();
+const direction = computed(() => (locale.value === "ar" ? "rtl" : "ltr"));
 </script>
 
 <template>
-  <main class="bg-[#fff] text-[#000] min-h-screen flex flex-col 2xl:container" >
+  <main
+    :dir="direction"
+    class="bg-[#fff] text-[#000] min-h-screen flex flex-col 2xl:container"
+  >
     <!-- Navbar -->
     <Navbar />
     <button

@@ -1,5 +1,8 @@
 <script setup lang="js">
 import { defineProps, defineEmits } from "vue";
+import { useI18n } from "vue-i18n";
+const { t } = useI18n(); // Import the translation function
+
 
 defineProps({
   baseClass: {
@@ -14,22 +17,22 @@ defineProps({
 
 const pages = [
   {
-    name: "Home",
+    name: "home", 
     route: "/",
     click: null,
   },
   {
-    name: "About Us",
+    name: "aboutUs", 
     route: "/about",
     click: null,
   },
   {
-    name: "Projects",
+    name: "projects", 
     route: "/projects",
     click: null,
   },
   {
-    name: "Gallery",
+    name: "gallery", 
     route: "/gallery",
     click: null,
   },
@@ -47,6 +50,6 @@ defineEmits(["link-click"]);
     :active-class="activeClass"
     @click="$emit('link-click')"
   >
-    {{ page.name }}
-  </router-link>
+  {{ $t(page.name) }}
+</router-link>
 </template>

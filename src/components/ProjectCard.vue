@@ -27,8 +27,8 @@ defineProps({
         {{ project.location || "Not available" }}
       </div>
 
-      <div class="flex space-x-2">
-        <div class="text-sm font-semibold">Starting Date:</div>
+      <div class="flex space-x-2 rtl:space-x-reverse">
+        <div class="text-sm font-semibold">{{ $t('Starting Date:') }}</div>
         <div class="text-sm">
           {{ project.date || "Not available" }}
         </div>

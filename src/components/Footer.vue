@@ -9,7 +9,7 @@ import Pages from './pages.vue';
   >
     <img src="../assets/images/white-logo.png" alt="" class="lg:w-32 w-20" />
     <div
-      class="flex text-white space-x-4 lg:text-center lg:justify-center 2xl:px-20"
+      class="flex text-white space-x-4 rtl:space-x-reverse lg:text-center lg:justify-center 2xl:px-20"
     >
       <Pages
         baseClass="text-lg hover:text-white transition-all ease-in-out hover:underline"

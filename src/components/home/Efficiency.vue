@@ -3,19 +3,19 @@ import { ref, onMounted, onBeforeUnmount } from 'vue';
 
 const counters = [
   {
-    title: "Completed Projects",
+    title: "completedProjects",
     number: 150,
   },
   {
-    title: "Ongoing Projects",
+    title: "ongoingProjects",
     number: 100,
   },
   {
-    title: "Qualified Engineers",
+    title: "qualifiedEngineers",
     number: 99,
   },
   {
-    title: "Satisfied Clients",
+    title: "satisfiedClients",
     number: 50,
   },
 ];
@@ -80,12 +80,10 @@ onBeforeUnmount(() => {
         class="flex flex-col xl:space-y-12 md:space-y-6 justify-center content-center items-start"
       >
         <h1 class="xl:text-5xl lg:text-3xl md:text-2xl font-bold text-xl">
-          Enduring efficiency and continuous progress
+          {{ $t("efficiencySection.title") }}
         </h1>
         <p class="lg:text-2xl text-justify text-md">
-          Every project we undertake represents an opportunity to demonstrate
-          our ability to achieve the highest levels of efficiency while
-          prioritizing client needs and satisfaction.
+          {{ $t("efficiencySection.description") }}
         </p>
       </div>
     </div>
@@ -108,10 +106,8 @@ onBeforeUnmount(() => {
             }}
             +
           </h1>
-          <h1
-            class="lg:text-[25px] mt-4 text-sm text-primaryRed"
-          >
-            {{ counter.title }}
+          <h1 class="lg:text-[25px] mt-4 text-sm text-primaryRed">
+            {{ $t(counter.title) }}
           </h1>
         </div>
       </div>

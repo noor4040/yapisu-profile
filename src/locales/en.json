@@ -1,0 +1,42 @@
+{
+  "home": "Home",
+  "aboutUs": "About Us",
+  "projects": "Projects",
+  "gallery": "Gallery",
+  "banner": {
+    "title": "Yapisu",
+    "description": "Transforms visions into innovative structures, shaping resilient communities with excellence and cutting-edge solutions."
+  },
+  "about": "About",
+  "Yapisu": "Yapisu",
+  "aboutYapisuDescription": " we believe construction is not just about building structures but about transforming ideas into architectural experiences that inspire and endure. Our goal is to be true partners in shaping the future, creating vibrant buildings that enhance well-being and fulfill community aspirations. We apply cutting-edge technologies to exceed expectations, contributing to resilient communities equipped for the challenges of tomorrow. With a focus on diversity and inclusivity, our projects, from industrial buildings to mosques, drive progress and economic efficiency.",
+  "readMore": "Read more",
+  "at": "At",
+  "Services": "Services",
+  "Diverse services": "Diverse services: ",
+  "projects that reflect ambitions and meet every need": "projects that reflect ambitions and meet every need",
+  "industrialBuildings": "Industrial Buildings",
+  "hospitals": "Hospitals and Medical Centers",
+  "schools": "Schools and Educational Facilities",
+  "hotels": "Hotels and Tourism Facilities",
+  "offices": "Offices and Workplaces",
+  "shops": "Shops and Shopping Centers",
+  "restaurants": "Restaurants and Entertainment Facilities",
+  "sportsVenues": "Sports Venues and Facilities",
+  "mosques": "Mosques and Religious Establishments",
+  "parkingLots": "Parking Lots and Public Facilities",
+  "engineering": "Engineering and Project Management",
+  "sanitation": "Installation and Repair of Sanitation Systems",
+
+  "efficiencySection": {
+    "title": "Enduring efficiency and continuous progress",
+    "description": "Every project we undertake represents an opportunity to demonstrate our ability to achieve the highest levels of efficiency while prioritizing client needs and satisfaction."
+  },
+
+  "completedProjects": "Completed Projects",
+  "ongoingProjects": "Ongoing Projects",
+  "qualifiedEngineers": "Qualified Engineers",
+  "satisfiedClients": "Satisfied Clients",
+  "Projects and Achievements": "Projects and Achievements",
+  "Starting Date:": "Starting Date:"
+}
