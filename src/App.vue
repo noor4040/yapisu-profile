@@ -6,6 +6,12 @@ import { useI18n } from "vue-i18n";
 import { computed } from "vue";
 const { locale } = useI18n();
 const direction = computed(() => (locale.value === "ar" ? "rtl" : "ltr"));
+
+function downloadProfile() {
+  // console.log("im in the downloadProfile functions");
+  const profileUrl = "http://localhost:8000/api/download-company-profile"; // to be updated with backend domain
+  window.open(profileUrl, "_blank");
+}
 </script>
 
 <template>
@@ -21,6 +27,7 @@ const direction = computed(() => (locale.value === "ar" ? "rtl" : "ltr"));
         background:
           'linear-gradient(45deg, var(--primaryRed), var(--primaryGrey))',
       }"
+      @click="downloadProfile()"
     >
       Company Profile
     </button>
