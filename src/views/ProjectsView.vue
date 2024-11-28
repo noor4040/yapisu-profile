@@ -53,7 +53,7 @@ const setPage = (page) => {
   </div>
 </div>
 
-    <div class="flex items-center space-x-2 py-6">
+    <div class="flex items-center space-x-2 py-6 rtl:space-x-reverse">
       <button
         @click="prevPage"
         :disabled="currentPage === 1"

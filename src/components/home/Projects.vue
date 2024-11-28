@@ -27,7 +27,7 @@ const homeProjects = projects.slice(0, 3);
     </router-link>
 
     <div
-      class="lg:space-x-10 lg:space-y-0 space-y-6 flex flex-col lg:flex-row justify-center content-center w-full lg:justify-between"
+      class="lg:space-x-10 lg:space-y-0 space-y-6 flex flex-col lg:flex-row justify-center content-center w-full lg:justify-between rtl:space-x-reverse"
     >
       <div v-for="project in homeProjects">
         <ProjectCard :project="project" />
