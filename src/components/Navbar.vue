@@ -55,7 +55,7 @@ const handleLinkClick = () => {
       v-if="isDrawerOpen"
       id="drawer-navigation"
       :class="[
-        'fixed top-0 right-0 z-50 h-screen p-4 overflow-y-auto bg-white w-64 shadow-md flex flex-col items-start pt-8',
+        'fixed top-0 right-0 rtl:left-0 z-50 h-screen p-4 overflow-y-auto bg-white w-64 shadow-md flex flex-col items-start pt-8',
       ]"
     >
       <button
@@ -71,6 +71,8 @@ const handleLinkClick = () => {
         activeClass="text-primaryRed font-bold underline"
         @link-click="handleLinkClick"
       />
+      <LanguageSwitcher />
+
     </div>
   </header>
 </template>

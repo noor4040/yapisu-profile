@@ -25,7 +25,7 @@
       <!-- Dropdown menu -->
       <ul
         v-if="dropdownOpen"
-        class="absolute left-0 w-40 mt-2 bg-white rounded-lg flex flex-col space-y-2 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none z-50"
+        class="absolute left-0 rtl:right-0 w-40 mt-2 bg-white rounded-lg flex flex-col space-y-2 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none z-50"
       >
         <li
           v-for="lang in languages"
