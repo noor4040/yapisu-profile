@@ -1,0 +1,101 @@
+{
+    "home": "Ana Sayfa",
+    "aboutUs": "Hakkımızda",
+    "projects": "Projeler",
+    "gallery": "Galeri",
+    "banner": {
+      "title": "Yapisu",
+      "description": "Vizyonları yenilikçi yapılara dönüştürür, mükemmellik ve ileri çözümlerle dayanıklı topluluklar oluşturur."
+    },
+    "about": "Hakkında",
+    "Yapisu": "Yapisu",
+    "aboutYapisuDescription": "İnşaatın sadece yapılar inşa etmekle ilgili olmadığını, fikirleri ilham verici ve kalıcı mimari deneyimlere dönüştürmekle ilgili olduğuna inanıyoruz. Amacımız, geleceği şekillendirmede gerçek ortaklar olmak, refahı artıran ve topluluk beklentilerini karşılayan canlı binalar yaratmaktır. Beklentileri aşmak için ileri teknolojileri uyguluyoruz, yarının zorluklarına hazır dayanıklı topluluklara katkıda bulunuyoruz. Çeşitlilik ve kapsayıcılığa odaklanarak, sanayi binalarından camilere kadar projelerimiz ilerlemeyi ve ekonomik verimliliği artırır.",
+    "readMore": "Daha fazla oku",
+    "at": "At",
+    "Services": "Hizmetler",
+    "Diverse services": "Çeşitli hizmetler: ",
+    "projects that reflect ambitions and meet every need": "ambisyonları yansıtan ve her ihtiyacı karşılayan projeler",
+    "industrialBuildings": "Sanayi Binaları",
+    "hospitals": "Hastaneler ve Tıp Merkezleri",
+    "schools": "Okullar ve Eğitim Tesisleri",
+    "hotels": "Oteller ve Turizm Tesisleri",
+    "offices": "Ofisler ve İşyerleri",
+    "shops": "Mağazalar ve Alışveriş Merkezleri",
+    "restaurants": "Restoranlar ve Eğlence Tesisleri",
+    "sportsVenues": "Spor Mekanları ve Tesisleri",
+    "mosques": "Camiler ve Dini Tesisler",
+    "parkingLots": "Otoparklar ve Kamu Tesisleri",
+    "engineering": "Mühendislik ve Proje Yönetimi",
+    "sanitation": "Kanalizasyon Sistemlerinin Kurulumu ve Onarımı",
+  
+    "efficiencySection": {
+      "title": "Kalıcı verimlilik ve sürekli ilerleme",
+      "description": "Üstlendiğimiz her proje, müşteri ihtiyaçlarını ve memnuniyetini ön planda tutarken en yüksek verimlilik seviyelerine ulaşma yeteneğimizi gösterme fırsatını temsil eder."
+    },
+  
+    "completedProjects": "Tamamlanan Projeler",
+    "ongoingProjects": "Devam Eden Projeler",
+    "qualifiedEngineers": "Nitelikli Mühendisler",
+    "satisfiedClients": "Memnun Müşteriler",
+    "Projects and Achievements": "Projeler ve Başarılar",
+    "Starting Date:": "Başlangıç Tarihi:",
+  
+    "aboutBanner": {
+      "about": "Hakkında",
+      "title": "Yapisu",
+      "description": "Etkili Ortaklık: Başarı ve Mükemmelliğe Giden Yol"
+    },
+    "aboutSection": {
+      "title": "Yapisu",
+      "description": "Yapisu, en son teknolojiler ve küresel standartlarla uyumlu yenilikçi ve modern mühendislik çözümleri sunan, konut dışı inşaatta uzmanlaşmış lider bir şirkettir. Yapisu'da inşaatın sadece yapılar inşa etmekle ilgili olmadığını, ilham verici ve kalıcı mimari deneyimlere dönüştürmekle ilgili olduğuna inanıyoruz. Amacımız, geleceği şekillendirmede gerçek ortaklar olmak, bireysel refahı artıran ve topluluk beklentilerini karşılayan canlı binalar yaratmaktır. Beklentileri aşan projeler sunmak için ileri teknolojileri uygulamaya kararlıyız, yarının zorluklarına karşı dayanıklı toplulukların gelişimine katkıda bulunuyoruz."
+    },
+  
+    "values": {
+      "quality": {
+        "title": "KALİTE",
+        "description": "Yapisu, ileri teknolojiler ve yüksek kaliteli malzemelerle mükemmelliği sağlar, her aşamada müşteri beklentilerini aşar."
+      },
+      "innovation": {
+        "title": "YENİLİK VE GELİŞİM",
+        "description": "Yenilik, Yapisu'nun stratejisini yönlendirir, modern teknolojileri kullanarak verimliliği artırır, maliyetleri düşürür ve değişen pazar ihtiyaçlarını karşılar."
+      },
+      "safety": {
+        "title": "GÜVENLİK STANDARTLARI",
+        "description": "Yapisu, çalışanlar ve müşteriler için güvenli bir ortam sağlamak amacıyla her aşamada en yüksek standartları ve protokolleri uygular."
+      },
+      "transparency": {
+        "title": "ŞEFFAFLIK",
+        "description": "Yapisu, maliyetler, zaman çizelgeleri ve zorluklar hakkında açık iletişim sağlayarak güven inşa eder ve sorunsuz proje başarısını sağlar."
+      },
+      "timelyDelivery": {
+        "title": "ZAMANINDA TESLİMAT",
+        "description": "Yapisu, zaman yönetiminde mükemmeldir, projeleri sürekli olarak zamanında teslim eder ve büyük ölçekli girişimler için güven kazanır."
+      },
+      "sustainability": {
+        "title": "SÜRDÜRÜLEBİLİR ÇÖZÜMLER",
+        "description": "Yapisu, çevresel etkiyi en aza indirmek ve topluluklarda sürdürülebilir kalkınmayı desteklemek için çevre dostu uygulamaları benimser."
+      }
+    },
+    "textBoldInAbout": "Yapisu'da, Yaratıcılık, Kalite ve Mükemmellik Kararlılığıyla İnşa Ediyoruz, Katma Değer ve Kalıcı Yenilik Simgesi Olarak İz Bırakıyoruz",
+    "sections": {
+      "overview": {
+        "title": "Şirket Genel Bakış",
+        "description": "Sanayi binalarından hastanelere, otellerden okullara, alışveriş merkezlerinden spor tesislerine ve camilere kadar projelerimiz çeşitliliği ve kapsayıcılığı temsil eder, ilerlemeyi teşvik eden altyapıyı geliştirmeye odaklanır. Geniş deneyimimiz ve yenilikçi vizyonumuzla, modernite ve sürdürülebilirliği birleştirerek en yüksek kalite ve ekonomik verimlilik standartlarını karşılayan projeler sunuyoruz. Bu nedenle yatırımcılar, uzun vadeli yatırımlar için bizi güvenilir ortaklar olarak görürler, çünkü sadece inşaat çözümleri sunmuyoruz, sürdürülebilir bir gelecek ve yıllar boyunca ayırt edici projeler sunuyoruz."
+      },
+      "vision": {
+        "title": "Vizyon",
+        "subtitle": "Geleceği İnşa Etmek: İnşaat Projelerinde Yenilik ve Sürdürülebilirlikte Liderlik",
+        "description": "Yenilik ve sürdürülebilirliğin ön planda olduğu hızlı tempolu inşaat dünyasında, Yapisu yeni standartlarla geleceği yeniden tanımlıyor. Sadece kapsamlı konut dışı inşaat hizmetleri sunmuyoruz; fark yaratan mimari deneyimler tasarlıyoruz. Modern mühendislik çözümlerimiz proje kalitesini artırır, çevresel etkiyi azaltır ve uzun vadeli mükemmellik mirası ilham verir. Şirket, yenilikçi tasarımları en son teknolojilerle harmanlayarak ve kaliteye sarsılmaz bir bağlılıkla en yüksek verimlilik ve güvenlik standartlarını karşılayan projeler sunmada mükemmeldir. Uzun vadeli maliyetleri azaltan ve operasyonel verimliliği artıran akıllı tesisler inşa etmeye odaklanıyoruz, tüm bunları doğal kaynakları koruyarak ve sürdürülebilir kalkınma hedeflerini destekleyerek yapıyoruz."
+      },
+      "mission": {
+        "title": "Misyon",
+        "subtitle": "İnşaatta Mükemmellik: Değişimi Sürdürme Taahhüdümüz",
+        "description": "Misyonumuz, müşterilerimizin vizyonlarını gerçeğe dönüştürmelerini sağlamak, ister ticari kompleksler, sağlık tesisleri veya ileri altyapı projeleri inşa etmek olsun. Bunu, işimizin kalbinde net iletişim, dürüstlük ve ayrıntılara dikkat yerleştiren işbirlikçi bir yaklaşımla başarıyoruz—kavramdan proje teslimine kadar. Uzun vadeli etkiye odaklanarak, sadece binalar inşa etmiyoruz, gelecekteki zorluklarla yüzleşebilecek dayanıklı topluluklar ve ortamlar şekillendirmeye yardımcı oluyoruz, tüm paydaşlar için büyüme, refah ve başarıyı teşvik ediyoruz. Felsefemiz, inşaatın sadece rutin bir iş olmadığı; mükemmellik, ayrıntılara dikkat, yenilik ve gelecek nesiller için sürdürülebilir bir gelecek inşa etme taahhüdüdür."
+      },
+      "efficiency": {
+        "title": "Verimlilik",
+        "subtitle": "Belirgin Temeller: Kalıcı Verimlilik ve Sürekli İlerleme",
+        "description": "Sürekli gelişen inşaat dünyasında, Yapisu verimlilik ve mükemmellik ile eş anlamlı bir isim olarak öne çıkıyor. Başarının sadece deneyimle değil, aynı zamanda değişikliklere uyum sağlama, kaynakları akıllıca kullanma ve en yüksek mühendislik standartlarını uygulama yeteneğiyle ölçüldüğünü anlayarak, şirket sektörde lider olarak kendini kanıtlamıştır. Şirket, insan kaynaklarına büyük önem verir, çünkü eğitimli ve yenilikçi ekiplerin herhangi bir başarılı projenin bel kemiği olduğuna inanır. Bu nedenle, ekiplerimizin becerilerini geliştirmek için sürekli olarak özel eğitim programlarına yatırım yapıyoruz, onları inşaatın her aşamasında yenilikçi, yüksek kaliteli çözümler sağlamak için en son teknolojiler ve bilgilerle donatıyoruz."
+      }
+    }
+  }

@@ -10,7 +10,7 @@ function toggleSection(section) {
 
 <template>
   <div class="min-h-screen mx-auto lg:py-10 2xl:px-40 lg:px-20 px-4">
-    <div
+    <div 
       v-for="sectionKey in ['overview', 'vision', 'mission', 'efficiency']"
       :key="sectionKey"
       tabindex="0"
